@@ -2,7 +2,7 @@
 function bucketSort(arr: number[], bucketSize: number = 5): number[] {
   if (arr.length === 0) return arr;
 
-  
+
 
   // 1. Descobrir menor e maior valor
   let minValue = arr[0]!;
@@ -38,3 +38,4 @@ function bucketSort(arr: number[], bucketSize: number = 5): number[] {
 const numeros = [5, 25, 3, 49, 9, 37, 21, 43, 1, 2, 8, 7];
 console.log("Array original:", numeros);
 console.log("Array ordenado:", bucketSort(numeros));
+// npx ts-node bucketSort.ts
